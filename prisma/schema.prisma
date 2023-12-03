@@ -15,4 +15,13 @@ model Product {
   price       Float
   image       String
   featured    Boolean @default(false)
+  category Category @relation(fields: [category_id], references: [id])
+  category_id Int
+}
+
+model Category {
+  id Int  @id @unique @default(autoincrement())
+  name String
+  slug String @unique
+  products Product[]
 }
