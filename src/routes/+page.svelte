@@ -1,2 +1,8 @@
+<script>
+	import Button from '$lib/components/Button.svelte';
+</script>
+
 <h1 class="text-red-500 text-4xl">Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Button buttonText="Btn1" logMessage="You clicked button" />
+<Button buttonText="Btn2" logMessage="You clicked button" />
